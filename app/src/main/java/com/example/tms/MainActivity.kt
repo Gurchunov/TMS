@@ -9,15 +9,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        sumNumber()
+        sumNumber(1234)
     }
 
-    private fun sumNumber() {
-        val a = 1..100
+    private fun sumNumber(a: Int) {
+        val chars = ("" + a).toCharArray()
         var temp = 0
-        for (x in a) {
-            temp = temp.plus(x)
-            println(temp)
+        for (x in chars){
+            temp = x.digitToInt().plus(temp)
         }
+        println(temp)
     }
 }
