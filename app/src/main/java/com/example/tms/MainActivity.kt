@@ -9,15 +9,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        sumNumber(1234)
+        randomNumber(24)
     }
 
-    private fun sumNumber(a: Int) {
-        val chars = ("" + a).toCharArray()
-        var temp = 0
-        for (x in chars){
-            temp = x.digitToInt().plus(temp)
+    private fun randomNumber(x: Int) {
+        val range = 25..100
+        if (x in 6..154) {
+            if (x in range) {
+                println("число $x попадает в искомый интервал")
+            } else {
+                println("число $x непопадает в искомый интервал")
+            }
         }
-        println(temp)
     }
-}
+    }
