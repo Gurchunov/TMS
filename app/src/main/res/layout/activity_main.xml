@@ -11,7 +11,6 @@
         android:layout_width="174dp"
         android:layout_height="51dp"
         android:layout_marginTop="176dp"
-        android:autofillHints="5"
         android:ems="10"
         android:hint="@string/enter_the_number"
         android:inputType="number"

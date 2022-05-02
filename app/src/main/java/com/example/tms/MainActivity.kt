@@ -15,11 +15,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.apply {
+
             btnOnfirm.setOnClickListener {
-                startTimer( binding.edText.text.toString().toLong())
+                if (timer == null) {
+                    startTimer(10000)
+                } else {
+                    startTimer(edText.text.toString().toLong())
+                }
             }
         }
     }
@@ -35,8 +38,5 @@ class MainActivity : AppCompatActivity() {
                 binding.string.text = "время вышло"
             }
         }.start()
-
     }
-
-
 }
