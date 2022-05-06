@@ -3,5 +3,10 @@
     <string name="gomel_region">Гомельская обл.</string>
     <string name="vitebsk_region">Витебская обл.</string>
     <string name="minsk_region">Минская обл.</string>
+    <string name="grodno_region">Гродненская обл.</string>
+    <string name="mogilev_region">Могилевская обл.</string>
+    <string name="brest_region">Брестская обл.</string>
+
     <string name="win">ПОБЕДА!!!</string>
+    <string name="start">Start</string>
 </resources>

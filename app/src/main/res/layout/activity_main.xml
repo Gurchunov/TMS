@@ -6,35 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="250dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="250dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/gomel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/gomel_region"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:text="@string/gomel_region"
-        app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,163 +23,124 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/vitebsk_region"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:text="@string/vitebsk_region"
-        app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        app:layout_constraintTop_toBottomOf="@+id/gomel" />
 
     <TextView
         android:id="@+id/minsk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/minsk_region"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:text="@string/minsk_region"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
-
-    <TextView
-        android:id="@+id/potatosG"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@color/green"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gomel"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/potatosV"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/green"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/vitebsk"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
-
-    <TextView
-        android:id="@+id/potatosM"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/green"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/minsk"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
-
-    <TextView
-        android:id="@+id/cabbageG"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/wheat"
-        app:layout_constraintBottom_toTopOf="@+id/beetG"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gomel"
-        app:layout_constraintTop_toBottomOf="@+id/potatosG" />
-
-    <TextView
-        android:id="@+id/beetG"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/burgundy"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gomel" />
-
-    <TextView
-        android:id="@+id/cabbageV"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/wheat"
-        app:layout_constraintBottom_toTopOf="@+id/beetV"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/vitebsk"
-        app:layout_constraintTop_toBottomOf="@+id/potatosV" />
-
-    <TextView
-        android:id="@+id/beetV"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/burgundy"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/vitebsk" />
-
-    <TextView
-        android:id="@+id/cabbageM"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/wheat"
-        app:layout_constraintBottom_toTopOf="@+id/beetM"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/minsk"
-        app:layout_constraintTop_toBottomOf="@+id/potatosM" />
-
-    <TextView
-        android:id="@+id/beetM"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/burgundy"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/minsk" />
-
-    <TextView
-        android:id="@+id/tмWinG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="@color/purple_200"
-        android:text="@string/win"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/gomel"
-        app:layout_constraintStart_toStartOf="@+id/gomel"
-        app:layout_constraintTop_toBottomOf="@+id/gomel" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="@color/purple_200"
-        android:text="@string/win"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/vitebsk"
-        app:layout_constraintStart_toStartOf="@+id/vitebsk"
         app:layout_constraintTop_toBottomOf="@+id/vitebsk" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/grodno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="@color/purple_200"
-        android:text="@string/win"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/grodno_region"
         android:textColor="@color/black"
-        android:textSize="24sp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/minsk"
-        app:layout_constraintStart_toStartOf="@+id/minsk"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/minsk" />
+
+    <TextView
+        android:id="@+id/mogilev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/mogilev_region"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grodno" />
+
+    <TextView
+        android:id="@+id/brest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/brest_region"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mogilev" />
+
+    <ProgressBar
+        android:id="@+id/pbGomel"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gomel"
+        app:layout_constraintTop_toTopOf="@+id/gomel" />
+
+    <ProgressBar
+        android:id="@+id/pbVitebsk"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/pbGomel"
+        app:layout_constraintStart_toStartOf="@+id/pbGomel"
+        app:layout_constraintTop_toTopOf="@+id/vitebsk" />
+
+    <ProgressBar
+        android:id="@+id/pbMinsk"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/pbVitebsk"
+        app:layout_constraintStart_toStartOf="@+id/pbVitebsk"
+        app:layout_constraintTop_toTopOf="@+id/minsk" />
+
+    <ProgressBar
+        android:id="@+id/pbGrodno"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/pbMinsk"
+        app:layout_constraintStart_toStartOf="@+id/pbMinsk"
+        app:layout_constraintTop_toTopOf="@+id/grodno" />
+
+    <ProgressBar
+        android:id="@+id/pbMogilev"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/pbGrodno"
+        app:layout_constraintStart_toStartOf="@+id/pbGrodno"
+        app:layout_constraintTop_toTopOf="@+id/mogilev" />
+
+    <ProgressBar
+        android:id="@+id/pbBrest"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/pbMogilev"
+        app:layout_constraintStart_toStartOf="@+id/pbMogilev"
+        app:layout_constraintTop_toTopOf="@+id/brest" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
