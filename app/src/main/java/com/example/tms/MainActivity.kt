@@ -2,9 +2,14 @@ package com.example.tms
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlin.random.Random
+
+import android.os.CountDownTimer
+import com.example.tms.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    private var timer: CountDownTimer? = null
+
 
     private val arrayQuestions: Array<String> = arrayOf(
         "Я устроюсь на работу?",
@@ -18,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         "Имееются перспективы",
         "Вопрос задан не верно"
     )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -69,6 +75,7 @@ class MainActivity : AppCompatActivity() {
 
         randomNumber(24)
     }
+
     private fun randomNumber(x: Int) {
         val range = 25..100
         if (x in 6..154) {
@@ -80,8 +87,9 @@ class MainActivity : AppCompatActivity() {
         }
         output()
     }
-    fun output() {
+
+    private fun output() {
         println(arrayQuestions.random())
         println(arrayAnswers.random())
     }
-    }
+}
