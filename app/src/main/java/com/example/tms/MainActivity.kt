@@ -2,7 +2,7 @@ package com.example.tms
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlin.random.Random
+
 import android.os.CountDownTimer
 import com.example.tms.databinding.ActivityMainBinding
 
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
         output()
     }
 
-    fun output() {
+    private fun output() {
         println(arrayQuestions.random())
         println(arrayAnswers.random())
     }
