@@ -3,4 +3,7 @@
     <string name="confirm">подтвердить</string>
     <string name="enter_the_number">введите число</string>
     <string name="countdown_time">время обратного отсчета</string>
+    <string name="name">Имя</string>
+    <string name="lastName">Фамилия</string>
+    <string name="age">Возраст</string>
 </resources>
