@@ -3,13 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gurch/AndroidStudioProjects/TMS/app/src/main/res/layout/activity_main.xml" value="0.33" />
-      </map>
-    </option>
-  </component>
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
+        <entry key="..\:/Users/gurch/AndroidStudioProjects/TMS/app/src/main/res/layout/activity_bolivia.xml" value="0.25" />
+        <entry key="..\:/Users/gurch/AndroidStudioProjects/TMS/app/src/main/res/layout/activity_botsvana.xml" value="0.2" />
+        <entry key="..\:/Users/gurch/AndroidStudioProjects/TMS/app/src/main/res/layout/activity_gambia.xml" value="0.17298578199052134" />
         <entry key="..\:/Users/gurch/AndroidStudioProjects/TMS/app/src/main/res/layout/activity_main.xml" value="0.20989583333333334" />
       </map>
     </option>
