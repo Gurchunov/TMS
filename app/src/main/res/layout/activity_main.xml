@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/btnBolivia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/boliviya"
+        app:layout_constraintBottom_toTopOf="@+id/btnMaldives"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMaldives"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/maldivi"
+        app:layout_constraintBottom_toTopOf="@+id/btnMauritius"
+        app:layout_constraintEnd_toEndOf="@+id/btnBolivia"
+        app:layout_constraintStart_toStartOf="@+id/btnBolivia"
+        app:layout_constraintTop_toBottomOf="@+id/btnBolivia" />
+
+    <Button
+        android:id="@+id/btnMauritius"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mavrikiy"
+        app:layout_constraintBottom_toTopOf="@+id/btnUAE"
+        app:layout_constraintEnd_toEndOf="@+id/btnMaldives"
+        app:layout_constraintStart_toStartOf="@+id/btnMaldives"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaldives" />
+
+    <Button
+        android:id="@+id/btnUAE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/oae"
+        app:layout_constraintBottom_toTopOf="@+id/btnSweden"
+        app:layout_constraintEnd_toEndOf="@+id/btnMauritius"
+        app:layout_constraintStart_toStartOf="@+id/btnMauritius"
+        app:layout_constraintTop_toBottomOf="@+id/btnMauritius" />
+
+    <Button
+        android:id="@+id/btnSweden"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Sweden"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnUAE"
+        app:layout_constraintStart_toStartOf="@+id/btnUAE"
+        app:layout_constraintTop_toBottomOf="@+id/btnUAE" />
 </androidx.constraintlayout.widget.ConstraintLayout>

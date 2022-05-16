@@ -3,4 +3,9 @@
     <string name="confirm">подтвердить</string>
     <string name="enter_the_number">введите число</string>
     <string name="countdown_time">время обратного отсчета</string>
+    <string name="boliviya">Боливия</string>
+    <string name="maldivi">Мальдивы</string>
+    <string name="mavrikiy">Маврикий</string>
+    <string name="oae">ОАЭ</string>
+    <string name="Sweden">Швеция</string>
 </resources>
