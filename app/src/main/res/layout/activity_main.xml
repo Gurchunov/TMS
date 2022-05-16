@@ -1,50 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/edText"
-        android:layout_width="174dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="176dp"
-        android:ems="10"
-        android:hint="@string/enter_the_number"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
-        android:textSize="24sp"
+    <Button
+        android:id="@+id/btnBolivia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/boliviya"
+        app:layout_constraintBottom_toTopOf="@+id/btnMaldives"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnСonfirm"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnMaldives"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="@string/confirm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edText" />
+        android:layout_marginTop="16dp"
+        android:text="@string/maldivi"
+        app:layout_constraintBottom_toTopOf="@+id/btnMauritius"
+        app:layout_constraintEnd_toEndOf="@+id/btnBolivia"
+        app:layout_constraintStart_toStartOf="@+id/btnBolivia"
+        app:layout_constraintTop_toBottomOf="@+id/btnBolivia" />
 
-    <TextView
-        android:id="@+id/string"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnMauritius"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/countdown_time"
-        android:textSize="24sp"
-        android:textColor="@color/black"
-        android:visibility="visible"
+        android:layout_marginTop="16dp"
+        android:text="@string/mavrikiy"
+        app:layout_constraintBottom_toTopOf="@+id/btnUAE"
+        app:layout_constraintEnd_toEndOf="@+id/btnMaldives"
+        app:layout_constraintStart_toStartOf="@+id/btnMaldives"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaldives" />
+
+    <Button
+        android:id="@+id/btnUAE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/oae"
+        app:layout_constraintBottom_toTopOf="@+id/btnSweden"
+        app:layout_constraintEnd_toEndOf="@+id/btnMauritius"
+        app:layout_constraintStart_toStartOf="@+id/btnMauritius"
+        app:layout_constraintTop_toBottomOf="@+id/btnMauritius" />
+
+    <Button
+        android:id="@+id/btnSweden"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Sweden"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnСonfirm"
-        app:layout_constraintVertical_bias="0.294" />
-
+        app:layout_constraintEnd_toEndOf="@+id/btnUAE"
+        app:layout_constraintStart_toStartOf="@+id/btnUAE"
+        app:layout_constraintTop_toBottomOf="@+id/btnUAE" />
 </androidx.constraintlayout.widget.ConstraintLayout>
