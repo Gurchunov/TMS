@@ -3,4 +3,6 @@
     <string name="confirm">подтвердить</string>
     <string name="enter_the_number">введите число</string>
     <string name="countdown_time">время обратного отсчета</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dz14">dz14</string>
 </resources>
