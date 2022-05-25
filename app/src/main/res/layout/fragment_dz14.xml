@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="216dp"
         android:gravity="center_horizontal"
-        android:text="tvQuestion"
+        android:text="Вопрос"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:layout_weight="1"
-        android:text="tvAnswer"
+        android:text="Ответ"
         app:layout_constraintEnd_toEndOf="@+id/tvQuestion"
         app:layout_constraintStart_toStartOf="@+id/tvQuestion"
         app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />

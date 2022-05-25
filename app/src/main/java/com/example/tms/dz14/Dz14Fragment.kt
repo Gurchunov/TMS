@@ -17,6 +17,8 @@ private lateinit var binding: FragmentDz14Binding
     ): View? {
         binding = FragmentDz14Binding.inflate(inflater,container, false)
         binding.apply {
+            tvQuestion.text =  arrayQuestions.random().toString()
+            tvAnswer.text = arrayAnswers.random().toString()
             btnRandom.setOnClickListener {
                tvQuestion.text =  arrayQuestions.random().toString()
                 tvAnswer.text = arrayAnswers.random().toString()
