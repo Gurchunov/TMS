@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.tms.databinding.FragmentButtonsBinding
 import com.example.tms.dz14.Dz14Fragment
+import com.example.tms.dz15.Dz15Fragment
 
 
 class ButtonsFragment : Fragment() {
@@ -20,10 +21,8 @@ class ButtonsFragment : Fragment() {
     ): View? {
         binding = FragmentButtonsBinding.inflate(inflater, container, false)
         binding.apply {
-            btnDz14.setOnClickListener {
-                parentFragmentManager.beginTransaction()
-                    .replace(R.id.fragmentContainer, Dz14Fragment.newInstance()).commit()
-            }
+            someButton(btnDz14, Dz14Fragment.newInstance())
+            someButton(btnDz15, Dz15Fragment.newInstance())
             return binding.root
         }
 
@@ -32,5 +31,13 @@ class ButtonsFragment : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = ButtonsFragment()
+    }
+
+    private fun someButton(view: View, fragment: Fragment) {
+        view.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, fragment)
+                .commit()
+        }
     }
 }

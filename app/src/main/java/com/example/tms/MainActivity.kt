@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 //        plus < multiplay -> println("$plus < $multiplay")
 //    }
 //
-//    randomNumber(24)
+//
 //}
 
 //private fun randomNumber(x: Int) {
@@ -76,12 +76,7 @@ class MainActivity : AppCompatActivity() {
 //            println("число $x непопадает в искомый интервал")
 //        }
 //    }
-//    output()
 //}
 
-//private fun output() {
-//    println(arrayQuestions.random())
-//    println(arrayAnswers.random())
-//}
 
 
