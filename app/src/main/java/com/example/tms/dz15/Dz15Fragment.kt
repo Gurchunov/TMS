@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import com.example.tms.databinding.FragmentDz15Binding
 
 class Dz15Fragment : Fragment() {
-
     private lateinit var binding: FragmentDz15Binding
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

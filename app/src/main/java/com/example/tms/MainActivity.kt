@@ -34,13 +34,7 @@ class MainActivity : AppCompatActivity() {
 //    println(count)
 //}
 //
-//private fun isEvenA(a: Int) {
-//    val b = 5
-//    when (a % 2 == 0) {
-//        true -> println("число A четное, a * b = " + a * b)
-//        false -> println("число A нечетное, a + b = " + (a + b))
-//    }
-//}
+
 //
 //private fun studentGrade(a: Int) {
 //    val message = "ваша оценка"
@@ -57,26 +51,17 @@ class MainActivity : AppCompatActivity() {
 //
 //private fun max(a: Int, b: Int, c: Int) {
 //    val plus = a + b + c
-//    val multiplay = a * b * c
+//    val multiPlay = a * b * c
 //    when {
-//        plus == multiplay -> println("значения равны")
-//        plus > multiplay -> println("$plus > $multiplay")
-//        plus < multiplay -> println("$plus < $multiplay")
+//        plus == multiPlay -> println("значения равны")
+//        plus > multiPlay -> println("$plus > multiPlay")
+//        plus < multiPlay -> println("$plus < multiPlay")
 //    }
 //
 //
 //}
 
-//private fun randomNumber(x: Int) {
-//    val range = 25..100
-//    if (x in 6..154) {
-//        if (x in range) {
-//            println("число $x попадает в искомый интервал")
-//        } else {
-//            println("число $x непопадает в искомый интервал")
-//        }
-//    }
-//}
+
 
 
 

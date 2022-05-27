@@ -10,4 +10,11 @@
     <string name="band">введите число от 25 до 100</string>
     <string name="check">Проверить</string>
     <string name="notification">уведомление</string>
+    <string name="dz16">DZ16</string>
+    <string name="inputNumber">Введите число</string>
+    <string name="count">посчитать</string>
+    <string name="info">info</string>
+    <string name="numberB">число Б</string>
+    <string name="numberC">число C</string>
+    <string name="numberA">число А</string>
 </resources>
