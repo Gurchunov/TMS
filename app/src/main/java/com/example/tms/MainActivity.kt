@@ -2,17 +2,10 @@ package com.example.tms
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
-import android.os.CountDownTimer
 import com.example.tms.databinding.ActivityMainBinding
-import com.example.tms.dz14.Dz14Fragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private var timer: CountDownTimer? = null
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
