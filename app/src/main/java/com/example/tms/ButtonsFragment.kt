@@ -11,9 +11,7 @@ import com.example.tms.dz15.Dz15Fragment
 import com.example.tms.dz16.Dz16Fragment
 
 class ButtonsFragment : Fragment() {
-
     private lateinit var binding: FragmentButtonsBinding
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,7 +32,12 @@ class ButtonsFragment : Fragment() {
 
     private fun someButton(view: View, fragment: Fragment) {
         view.setOnClickListener {
-            parentFragmentManager.beginTransaction()
+            parentFragmentManager.beginTransaction().setCustomAnimations(
+                R.anim.slide_in_left,
+                R.anim.slide_out_left,
+                R.anim.slide_in_right,
+                R.anim.slide_out_right
+            )
                 .replace(R.id.fragmentContainer, fragment)
                 .addToBackStack("fragment")
                 .commit()

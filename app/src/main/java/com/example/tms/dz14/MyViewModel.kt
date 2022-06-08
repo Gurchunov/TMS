@@ -4,22 +4,27 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MyViewModel : ViewModel() {
-    val arrayAnswers: String = arrayOf(
+    val arrayAnswers: Array<String> = arrayOf(
         "Да",
         "Нет",
         "Возможно",
         "Скорее всего",
         "Имееются перспективы",
         "Вопрос задан не верно"
-    ).random().toString()
-    val arrayQuestions: String = arrayOf(
+    )
+    val arrayQuestions: Array<String> = arrayOf(
         "Я устроюсь на работу?",
         "Меня ждет успех?"
-    ).random().toString()
+    )
     val questionCurrentViewModel: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
     val answerCurrentViewModel: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
+    }
+
+    fun setInfo() {
+        questionCurrentViewModel.value = arrayQuestions.random().toString()
+        answerCurrentViewModel.value = arrayAnswers.random().toString()
     }
 }
