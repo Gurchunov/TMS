@@ -31,10 +31,10 @@ class Dz14Fragment : Fragment() {
                 viewModel.setInfo()
             }
         }
-        viewModel.questionCurrentViewModel.observe(this@Dz14Fragment as LifecycleOwner, Observer {
+        viewModel.questionCurrentLiveDate.observe(this@Dz14Fragment as LifecycleOwner, Observer {
             binding.tvQuestion.text = it
         })
-        viewModel.answerCurrentViewModel.observe(this@Dz14Fragment as LifecycleOwner, Observer {
+        viewModel.answerCurrentLiveDate.observe(this@Dz14Fragment as LifecycleOwner, Observer {
             binding.tvAnswer.text = it
         })
     }
