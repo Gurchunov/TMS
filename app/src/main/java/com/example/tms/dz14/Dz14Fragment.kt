@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import com.example.tms.databinding.FragmentDz14Binding
 
 class Dz14Fragment : Fragment() {
+
     private lateinit var binding: FragmentDz14Binding
     private val viewModel: MyViewModel by viewModels()
     override fun onCreateView(
@@ -38,9 +39,4 @@ class Dz14Fragment : Fragment() {
             binding.tvAnswer.text = it
         })
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = Dz14Fragment()
-    }
-    }
+}

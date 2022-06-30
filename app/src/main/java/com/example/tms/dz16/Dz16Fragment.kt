@@ -48,9 +48,4 @@ class Dz16Fragment : Fragment() {
             plus < multiPlay -> binding.tvInfo.text = "$plus < $multiPlay"
         }
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = Dz16Fragment()
-    }
 }

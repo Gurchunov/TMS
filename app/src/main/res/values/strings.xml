@@ -17,4 +17,5 @@
     <string name="numberB">число Б</string>
     <string name="numberC">число C</string>
     <string name="numberA">число А</string>
+    <string name="nameDz">TextView</string>
 </resources>

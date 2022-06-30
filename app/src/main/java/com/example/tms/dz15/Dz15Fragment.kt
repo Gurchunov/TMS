@@ -35,9 +35,4 @@ class Dz15Fragment : Fragment() {
             binding.tvNotification.text = "вы вышли за рамки набора значений"
         }
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = Dz15Fragment()
-    }
 }
