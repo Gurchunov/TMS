@@ -21,25 +21,19 @@ class RecyclerViewAdapter(private val listData: List<DateModel>) :
         return MyViewHolder(itemRecyclerviewBinding)
     }
 
-    override fun getItemCount(): Int {
-        return listData.size
-    }
+    override fun getItemCount(): Int = listData.size
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.bind(listData[position])
         holder.itemView.setOnClickListener { v ->
             when (position) {
                 0 -> {
-
                     openFragment(v, Dz14Fragment())
                 }
-
                 1 -> {
-
                     openFragment(v, Dz15Fragment())
                 }
                 2 -> {
-
                     openFragment(v, Dz16Fragment())
                 }
             }

@@ -39,9 +39,4 @@ class Dz14Fragment : Fragment() {
             binding.tvAnswer.text = it
         })
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = Dz14Fragment()
-    }
 }
