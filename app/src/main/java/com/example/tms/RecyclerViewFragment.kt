@@ -25,9 +25,4 @@ class RecyclerViewFragment : Fragment() {
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         return binding.root
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = RecyclerViewFragment()
-    }
 }
