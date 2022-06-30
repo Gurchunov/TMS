@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainer, ButtonsFragment.newInstance())
+            .replace(R.id.fragmentContainer, RecyclerViewFragment.newInstance())
             .commit()
     }
 }
